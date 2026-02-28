@@ -1,4 +1,4 @@
-\# LUXEORA Fashion House 🏛️
+# LUXEORA Fashion House 🏛️
 
 
 
