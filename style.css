@@ -866,7 +866,7 @@ address { font-style: normal; }
   padding: var(--py) 0;
   background: var(--bg);
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   transition: background 0.4s;
 }
 
@@ -890,35 +890,41 @@ address { font-style: normal; }
 .about-visuals {
   position: relative;
   flex: 0 0 clamp(280px, 42%, 480px);
-  padding-bottom: 4rem;
+  padding-bottom: 5rem;
+  padding-right: 2rem;
   flex-shrink: 0;
+  min-height: 400px;
 }
 
 .av-back {
   aspect-ratio: 4/5;
   overflow: hidden;
   box-shadow: var(--shadow-md);
+  position: relative;
+  z-index: 1;
 }
 
 .av-front {
   position: absolute;
-  bottom: 0; right: -1.5rem;
+  bottom: 0; right: 0;
   width: 56%;
   aspect-ratio: 3/4;
   overflow: hidden;
   border: 4px solid var(--bg);
   box-shadow: var(--shadow-md);
+  z-index: 2;
 }
 
 .av-badge {
   position: absolute;
-  top: 1.5rem; right: -1.5rem;
+  top: 1.5rem; right: 0;
   background: var(--gold);
   padding: 1rem 1.2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   box-shadow: var(--shadow-sm);
+  z-index: 3;
 }
 
 .av-badge-n {
@@ -1705,3 +1711,153 @@ address { font-style: normal; }
 }
 
 .hero-content { animation: fadeUp 1s var(--ease-out) 0.15s both; }
+
+
+/* ──────────────────────────────────────────────────
+   FOOTER — FONCTIONNALITÉS SUPPLÉMENTAIRES
+─────────────────────────────────────────────────── */
+
+/* Mini Newsletter Footer */
+.footer-newsletter {
+  margin: 1.5rem 0;
+}
+
+.footer-nl-label {
+  font-size: clamp(0.58rem, 1.2vw, 0.65rem);
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.7rem;
+}
+
+.footer-nl-form {
+  display: flex;
+  height: 42px;
+  border: 1px solid rgba(250,248,243,0.15);
+  overflow: hidden;
+  transition: border-color 0.3s;
+}
+
+.footer-nl-form:focus-within {
+  border-color: var(--gold);
+}
+
+.footer-nl-form input {
+  flex: 1;
+  background: rgba(255,255,255,0.05);
+  border: none;
+  padding: 0 1rem;
+  color: rgba(250,248,243,0.85);
+  font-family: var(--f-body);
+  font-size: clamp(0.72rem, 1.5vw, 0.8rem);
+  font-weight: 300;
+  outline: none;
+  width: 100%;
+}
+
+.footer-nl-form input::placeholder {
+  color: rgba(250,248,243,0.3);
+}
+
+.footer-nl-form button {
+  background: var(--gold);
+  border: none;
+  padding: 0 1.2rem;
+  color: #FAF8F3;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.25s, transform 0.2s;
+  flex-shrink: 0;
+}
+
+.footer-nl-form button:hover {
+  background: var(--gold-lt);
+  transform: translateX(2px);
+}
+
+/* Icônes sociales — effet flip 3D au survol */
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px; height: 38px;
+  border: 1px solid rgba(250,248,243,0.18);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: border-color 0.3s;
+  perspective: 300px;
+}
+
+.social-btn:hover {
+  border-color: var(--gold);
+}
+
+.social-front,
+.social-back {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(0.55rem, 1.1vw, 0.62rem);
+  font-weight: 600;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              opacity 0.4s;
+}
+
+.social-front {
+  color: rgba(250,248,243,0.5);
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.social-back {
+  color: var(--gold);
+  transform: translateY(100%);
+  opacity: 0;
+  font-size: 0.9rem;
+}
+
+.social-btn:hover .social-front {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.social-btn:hover .social-back {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Bouton Retour en haut */
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 46px; height: 46px;
+  background: var(--gold);
+  color: #FAF8F3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  box-shadow: var(--shadow-md);
+  z-index: 999;
+  transition: background 0.3s, transform 0.3s var(--ease-out), opacity 0.3s;
+  text-decoration: none;
+  border: none;
+  opacity: 0.85;
+}
+
+.back-to-top:hover {
+  background: var(--gold-lt);
+  transform: translateY(-4px);
+  opacity: 1;
+}
+
+/* Correction footer mode sombre/clair — fond toujours sombre */
+.site-footer {
+  background: #1A1510 !important;
+}
