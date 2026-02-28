@@ -340,11 +340,11 @@ Puis ouvrir `index.html` dans un navigateur ou via **VS Code Live Server**.
 
 | Nom | Rôle |
 |-----|------|
-| **TONATO Océane** | Développement & Intégration |
-| **HINVI Basilia** | Design & CSS |
-| **HANTO Jordy** | Structure HTML & Responsive |
-| **DJEHONNON Geoffroy** | Business Plan & Rapport |
-| **SOZAN Euloge** | Chef de projet & GitHub |
+| **TONATO Océane** | Réalisation du business plan |
+| **HINVI Basilia** | Readme |
+| **HANTO Jordy** | Contenu de la page |
+| **DJEHONNON Geoffroy** | contenu de la page |
+| **SOZAN Euloge** | html & css |
 
 **Parcours L1 IFRI — Académie de Programmation**
 Projet Académique · Bloc 1 Développement Web · Février 2026
