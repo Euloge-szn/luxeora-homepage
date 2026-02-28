@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LUXEORA Fashion House — L'élégance intemporelle</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Josefin+Sans:wght@100;300;400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!--
+  ════════════════════════════════════════
+    TOGGLES CACHÉS — checkbox hack CSS
+    Doivent être AVANT .page-wrap pour
+    que le sélecteur ~ fonctionne
+  ════════════════════════════════════════
+  -->
+  <input type="checkbox" id="theme-toggle" class="theme-input" />
+  <input type="checkbox" id="menu-toggle"  class="menu-input"  />
+
+  <div class="page-wrap">
+
+    <!-- ══════════════════════════
+         HEADER
+    ══════════════════════════ -->
+    <header class="site-header">
+
+      <!-- Ticker d'information -->
+      <div class="header-ticker">
+        <div class="ticker-track">
+          <span>Nouvelle Collection · Printemps-Été 2025</span>
+          <span>✦</span>
+          <span>Livraison offerte dès 250 000 FCFA</span>
+          <span>✦</span>
+          <span>Saison des Soldes · Jusqu'à −40%</span>
+          <span>✦</span>
+          <span>Nouvelle Collection · Printemps-Été 2025</span>
+          <span>✦</span>
+          <span>Livraison offerte dès 250 000 FCFA</span>
+          <span>✦</span>
+          <span>Saison des Soldes · Jusqu'à −40%</span>
+          <span>✦</span>
+        </div>
+      </div>
+
+      <!-- Barre principale -->
+      <div class="header-inner">
+
+        <a href="#" class="logo-link">
+          <img src="assets/logo/logo.jpeg" alt="LUXEORA Fashion House" class="logo-img" />
+        </a>
+
+        <!-- Navigation desktop -->
+        <nav class="main-nav" aria-label="Navigation principale">
+          <a href="#collections" class="nav-link">Collections</a>
+          <a href="#galerie"     class="nav-link">Galerie</a>
+          <a href="#about"       class="nav-link">Maison</a>
+          <a href="#promos"      class="nav-link">Éditions</a>
+          <a href="#temoignages" class="nav-link">Avis</a>
+          <a href="#newsletter"  class="nav-link nav-cta">Boutique</a>
+        </nav>
+
+        <!-- Contrôles -->
+        <div class="header-controls">
+
+          <!-- Bouton Mode Sombre / Clair -->
+          <label for="theme-toggle" class="theme-label" title="Basculer thème">
+            <span class="icon-sun">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                <circle cx="12" cy="12" r="5"/>
+                <line x1="12" y1="1"  x2="12" y2="3"/>
+                <line x1="12" y1="21" x2="12" y2="23"/>
+                <line x1="4.22"  y1="4.22"   x2="5.64"  y2="5.64"/>
+                <line x1="18.36" y1="18.36"  x2="19.78" y2="19.78"/>
+                <line x1="1"  y1="12" x2="3"  y2="12"/>
+                <line x1="21" y1="12" x2="23" y2="12"/>
+                <line x1="4.22"  y1="19.78" x2="5.64"  y2="18.36"/>
+                <line x1="18.36" y1="5.64"  x2="19.78" y2="4.22"/>
+              </svg>
+            </span>
+            <span class="icon-moon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+              </svg>
+            </span>
+          </label>
+
+          <!-- Burger (3 barres) -->
+          <label for="menu-toggle" class="burger-label" aria-label="Ouvrir le menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </label>
+
+        </div>
+      </div>
+
+      <!-- Navigation mobile (slide-down via :checked) -->
+      <nav class="mobile-nav" aria-label="Navigation mobile">
+        <a href="#collections" class="mob-link">Collections</a>
+        <a href="#galerie"     class="mob-link">Galerie</a>
+        <a href="#about"       class="mob-link">Maison</a>
+        <a href="#promos"      class="mob-link">Éditions</a>
+        <a href="#temoignages" class="mob-link">Avis</a>
+        <a href="#newsletter"  class="mob-link mob-cta">Boutique →</a>
+      </nav>
+
+    </header>
+
+    <main>
+
+      <!-- ══════════════════════════
+           HERO
+      ══════════════════════════ -->
+      <section class="hero" id="hero">
+        <div class="hero-media">
+          <img src="assets/image/femme1.jpg" alt="LUXEORA – Collection Signature SS25" class="hero-img" />
+          <div class="hero-veil"></div>
+        </div>
+
+        <div class="hero-content">
+          <p class="hero-eyebrow">Collection Signature · SS 2025</p>
+
+          <h1 class="hero-title">
+            <span class="ht-thin">L'Art du</span>
+            <span class="ht-bold">RAFFINEMENT</span>
+            <span class="ht-italic">sans compromis.</span>
+          </h1>
+
+          <p class="hero-sub">
+            Chaque pièce LUXEORA est une déclaration silencieuse,
+            pensée pour ceux qui comprennent que l'élégance
+            n'a pas besoin de crier pour être entendue.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#collections" class="btn-primary">Découvrir la Collection</a>
+            <a href="#about"       class="btn-ghost">Notre Histoire</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-n">14</span>
+              <span class="stat-l">Ans d'excellence</span>
+            </div>
+            <div class="stat-sep"></div>
+            <div class="stat">
+              <span class="stat-n">3 K+</span>
+              <span class="stat-l">Clients fidèles</span>
+            </div>
+            <div class="stat-sep"></div>
+            <div class="stat">
+              <span class="stat-n">120</span>
+              <span class="stat-l">Pièces / saison</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-scroll-hint">
+          <div class="scroll-bar"></div>
+          <span>Défiler</span>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════
+           BANDEAU MESSAGE FORT
+      ══════════════════════════ -->
+      <div class="marquee-band" aria-hidden="true">
+        <div class="marquee-track">
+          <span>L'élégance intemporelle, désormais à portée de clic</span>
+          <span class="mq-sep">✦</span>
+          <span>L'élégance intemporelle, désormais à portée de clic</span>
+          <span class="mq-sep">✦</span>
+          <span>L'élégance intemporelle, désormais à portée de clic</span>
+          <span class="mq-sep">✦</span>
+          <span>L'élégance intemporelle, désormais à portée de clic</span>
+          <span class="mq-sep">✦</span>
+        </div>
+      </div>
+
+      <!-- ══════════════════════════
+           PRODUITS PHARES
+      ══════════════════════════ -->
+      <section class="collections" id="collections">
+        <div class="container">
+
+          <div class="section-head">
+            <div class="sh-left">
+              <span class="section-tag">— Produits Phares</span>
+              <h2 class="section-title">Les Pièces<br /><em>Iconiques</em></h2>
+            </div>
+            <a href="#" class="see-all">Voir tout →</a>
+          </div>
+
+          <div class="products-grid">
+
+            <article class="product-card">
+              <div class="pc-img-wrap">
+                <img src="assets/image/femme2.jpg" alt="Manteau Lumière Noir" loading="lazy" />
+                <div class="pc-overlay"><a href="#" class="pc-btn">Voir la pièce</a></div>
+                <span class="pc-tag">Nouveauté</span>
+              </div>
+              <div class="pc-info">
+                <span class="pc-cat">Femme · Manteaux</span>
+                <h3 class="pc-name">Manteau Lumière Noir</h3>
+                <span class="pc-price">185 000 FCFA</span>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="pc-img-wrap">
+                <img src="assets/image/homme1.jpg" alt="Costume Sartorial Ivoire" loading="lazy" />
+                <div class="pc-overlay"><a href="#" class="pc-btn">Voir la pièce</a></div>
+                <span class="pc-tag pc-tag-gold">Bestseller</span>
+              </div>
+              <div class="pc-info">
+                <span class="pc-cat">Homme · Costumes</span>
+                <h3 class="pc-name">Costume Sartorial Ivoire</h3>
+                <span class="pc-price">240 000 FCFA</span>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="pc-img-wrap">
+                <img src="assets/image/femme3.jpg" alt="Robe Solaire Champagne" loading="lazy" />
+                <div class="pc-overlay"><a href="#" class="pc-btn">Voir la pièce</a></div>
+              </div>
+              <div class="pc-info">
+                <span class="pc-cat">Femme · Robes</span>
+                <h3 class="pc-name">Robe Solaire Champagne</h3>
+                <span class="pc-price">162 000 FCFA</span>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="pc-img-wrap">
+                <img src="assets/image/homme2.jpg" alt="Veste Architecturale Gris" loading="lazy" />
+                <div class="pc-overlay"><a href="#" class="pc-btn">Voir la pièce</a></div>
+              </div>
+              <div class="pc-info">
+                <span class="pc-cat">Homme · Vestes</span>
+                <h3 class="pc-name">Veste Architecturale Gris</h3>
+                <span class="pc-price">198 000 FCFA</span>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════
+           GALERIE — scroll-snap-type
+      ══════════════════════════ -->
+      <section class="galerie" id="galerie">
+        <div class="container">
+          <div class="section-head">
+            <div class="sh-left">
+              <span class="section-tag">— Galerie de Saison</span>
+              <h2 class="section-title">L'Univers<br /><em>LUXEORA</em></h2>
+            </div>
+            <p class="galerie-hint">← Faites glisser →</p>
+          </div>
+        </div>
+
+        <!-- scroll-snap-type: x mandatory -->
+        <div class="snap-track">
+          <div class="snap-card">
+            <img src="assets/image/homme4.jpg" alt="Homme – Look Urbain" loading="lazy" />
+            <div class="snap-caption">
+              <span>Homme</span>
+              <p>Look Urbain · SS25</p>
+            </div>
+          </div>
+          <div class="snap-card">
+            <img src="assets/image/homme5.jpg" alt="Homme – Élégance Naturelle" loading="lazy" />
+            <div class="snap-caption">
+              <span>Homme</span>
+              <p>Élégance Naturelle · SS25</p>
+            </div>
+          </div>
+          <div class="snap-card">
+            <img src="assets/image/femme7.jpg" alt="Femme – Silhouette Lumière" loading="lazy" />
+            <div class="snap-caption">
+              <span>Femme</span>
+              <p>Silhouette Lumière · SS25</p>
+            </div>
+          </div>
+          <div class="snap-card">
+            <img src="assets/image/homme6.jpg" alt="Homme – Sartorial Précision" loading="lazy" />
+            <div class="snap-caption">
+              <span>Homme</span>
+              <p>Sartorial Précision · SS25</p>
+            </div>
+          </div>
+          <div class="snap-card">
+            <img src="assets/image/femme8.jpg" alt="Femme – Couture Signature" loading="lazy" />
+            <div class="snap-caption">
+              <span>Femme</span>
+              <p>Couture Signature · SS25</p>
+            </div>
+          </div>
+          <div class="snap-card">
+            <img src="assets/image/homme7.jpg" alt="Homme – Portrait Classique" loading="lazy" />
+            <div class="snap-caption">
+              <span>Homme</span>
+              <p>Portrait Classique · SS25</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════
+           À PROPOS
+      ══════════════════════════ -->
+      <section class="about" id="about">
+        <div class="container">
+          <div class="about-grid">
+
+            <!-- Visuels empilés -->
+            <div class="about-visuals">
+              <div class="av-back">
+                <img src="assets/image/femme4.jpg" alt="Atelier LUXEORA" loading="lazy" />
+              </div>
+              <div class="av-front">
+                <img src="assets/image/homme3.jpg" alt="Création LUXEORA" loading="lazy" />
+              </div>
+              <div class="av-badge">
+                <span class="av-badge-n">14</span>
+                <span class="av-badge-t">ans<br />d'art</span>
+              </div>
+            </div>
+
+            <!-- Contenu texte -->
+            <div class="about-content">
+              <span class="section-tag">— Notre Maison</span>
+              <h2 class="about-title">
+                Née de la passion,<br />
+                <em>forgée par le savoir-faire.</em>
+              </h2>
+              <p class="about-text">
+                Fondée en 2010 au cœur de la ville, LUXEORA Fashion House est bien plus
+                qu'une maison de mode — c'est un manifeste vivant contre la mode jetable.
+                Chaque pièce est conçue avec une obsession du détail, pensée pour traverser
+                les saisons sans jamais perdre son caractère.
+              </p>
+              <p class="about-text">
+                Nos collections masculines et féminines s'articulent autour d'un principe
+                fondateur : l'élégance véritable naît de la précision, non de l'excès.
+                Des matières sélectionnées aux coutures invisibles, rien n'est laissé au hasard.
+              </p>
+
+              <div class="about-values">
+                <div class="av-item">
+                  <div class="avi-icon">◈</div>
+                  <strong>Artisanat</strong>
+                  <p>Chaque couture, chaque boutonnière, travaillée à la main.</p>
+                </div>
+                <div class="av-item">
+                  <div class="avi-icon">◈</div>
+                  <strong>Durabilité</strong>
+                  <p>Des matières choisies pour durer, pas seulement pour séduire.</p>
+                </div>
+                <div class="av-item">
+                  <div class="avi-icon">◈</div>
+                  <strong>Identité</strong>
+                  <p>Une esthétique reconnaissable entre mille, jamais imitée.</p>
+                </div>
+              </div>
+
+              <a href="#newsletter" class="btn-primary">Rejoindre la Maison</a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════
+           PROMOTIONS
+      ══════════════════════════ -->
+      <section class="promos" id="promos">
+        <div class="container">
+
+          <div class="section-head centered">
+            <span class="section-tag">— Éditions &amp; Offres</span>
+            <h2 class="section-title">Saisir<br /><em>le Moment</em></h2>
+          </div>
+
+          <div class="promos-grid">
+
+            <div class="promo-card promo-main">
+              <div class="promo-img-wrap">
+                <img src="assets/image/femme5.jpg" alt="Soldes Fin de Saison" loading="lazy" />
+                <div class="promo-veil"></div>
+              </div>
+              <div class="promo-body">
+                <span class="promo-badge">−40%</span>
+                <h3>Soldes Fin de Saison</h3>
+                <p>Tout l'hiver soldé — manteaux, costumes, robes. Une occasion rare d'accéder à l'excellence LUXEORA.</p>
+                <div class="promo-countdown">
+                  <div class="cd-item"><span class="cd-n">07</span><span class="cd-l">Jours</span></div>
+                  <span class="cd-sep">:</span>
+                  <div class="cd-item"><span class="cd-n">14</span><span class="cd-l">Heures</span></div>
+                  <span class="cd-sep">:</span>
+                  <div class="cd-item"><span class="cd-n">32</span><span class="cd-l">Min</span></div>
+                </div>
+                <a href="#" class="btn-primary">Explorer les Soldes</a>
+              </div>
+            </div>
+
+            <div class="promo-side">
+
+              <div class="promo-card promo-small">
+                <div class="promo-img-wrap promo-img-sm">
+                  <img src="assets/image/femme6.jpg" alt="Capsule Dorée" loading="lazy" />
+                  <div class="promo-veil"></div>
+                </div>
+                <div class="promo-body promo-body-sm">
+                  <span class="promo-badge promo-badge-gold">Exclusif</span>
+                  <h3>Capsule Dorée</h3>
+                  <p>15 pièces. Une seule saison. Ne revient jamais.</p>
+                  <a href="#" class="btn-ghost btn-sm">Découvrir →</a>
+                </div>
+              </div>
+
+              <div class="promo-card promo-dark">
+                <div class="promo-body promo-body-sm">
+                  <span class="promo-tag-mini">Programme Fidélité</span>
+                  <h3>Cercle Prestige</h3>
+                  <p>Accès prioritaire, invitations exclusives et remises personnalisées pour nos membres fidèles.</p>
+                  <a href="#newsletter" class="btn-primary btn-sm">Rejoindre →</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════
+           TÉMOIGNAGES
+      ══════════════════════════ -->
+      <section class="testimonials" id="temoignages">
+        <div class="container">
+
+          <div class="section-head centered">
+            <span class="section-tag">— Ce qu'ils disent</span>
+            <h2 class="section-title">La parole<br /><em>de nos clients</em></h2>
+          </div>
+
+          <div class="testi-grid">
+
+            <blockquote class="testi-card">
+              <div class="testi-top">
+                <div class="testi-stars">★★★★★</div>
+                <p class="testi-text">
+                  "LUXEORA a changé ma façon de me percevoir. Quand on porte une pièce
+                  de leur collection, on comprend immédiatement pourquoi la qualité
+                  n'a pas de prix. C'est une expérience sensorielle totale."
+                </p>
+              </div>
+              <footer class="testi-footer">
+                <div class="testi-avatar">AA</div>
+                <div>
+                  <cite class="testi-name">Aminata Alassane</cite>
+                  <span class="testi-role">Directrice Marketing, Lagos</span>
+                </div>
+              </footer>
+            </blockquote>
+
+            <blockquote class="testi-card">
+              <div class="testi-top">
+                <div class="testi-stars">★★★★★</div>
+                <p class="testi-text">
+                  "Le costume sartorial que j'ai commandé est d'une précision rare.
+                  Chaque détail parle d'un vrai savoir-faire. Je recommande
+                  LUXEORA sans hésitation à tous mes collègues."
+                </p>
+              </div>
+              <footer class="testi-footer">
+                <div class="testi-avatar">KD</div>
+                <div>
+                  <cite class="testi-name">Kofi Diabaté</cite>
+                  <span class="testi-role">Avocat d'affaires, Abidjan</span>
+                </div>
+              </footer>
+            </blockquote>
+
+            <blockquote class="testi-card">
+              <div class="testi-top">
+                <div class="testi-stars">★★★★★</div>
+                <p class="testi-text">
+                  "La robe Solaire que j'ai reçue était encore plus belle qu'en photo.
+                  Le service est irréprochable et la livraison très rapide.
+                  Je suis totalement conquise !"
+                </p>
+              </div>
+              <footer class="testi-footer">
+                <div class="testi-avatar">FN</div>
+                <div>
+                  <cite class="testi-name">Fatima N'Dour</cite>
+                  <span class="testi-role">Entrepreneur, Dakar</span>
+                </div>
+              </footer>
+            </blockquote>
+
+            <blockquote class="testi-card">
+              <div class="testi-top">
+                <div class="testi-stars">★★★★★</div>
+                <p class="testi-text">
+                  "Quatre ans de fidélité et LUXEORA reste constante dans sa qualité
+                  et son raffinement. Chaque nouvelle collection me surprend
+                  agréablement."
+                </p>
+              </div>
+              <footer class="testi-footer">
+                <div class="testi-avatar">MS</div>
+                <div>
+                  <cite class="testi-name">Marie-Sophie Koné</cite>
+                  <span class="testi-role">Médecin, Cotonou</span>
+                </div>
+              </footer>
+            </blockquote>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════
+           NEWSLETTER — CLUB VIP
+      ══════════════════════════ -->
+      <section class="newsletter" id="newsletter">
+        <div class="container">
+          <div class="nl-box">
+
+            <!-- Bandeau VIP -->
+            <div class="nl-vip-band">
+              <span>♛</span>
+              <span class="nl-vip-text">Accès Membres Exclusifs Seulement</span>
+              <span>♛</span>
+            </div>
+
+            <!-- En-tête centré -->
+            <div class="nl-header">
+              <span class="section-tag">— Cercle Privé LUXEORA</span>
+              <h2 class="nl-title">
+                Entrez dans<br />
+                <em>l'Intimité de la Maison</em>
+              </h2>
+              <p class="nl-sub">
+                Nos membres reçoivent en avant-première les nouvelles collections,
+                des invitations aux événements exclusifs et des offres réservées
+                à notre cercle le plus proche.
+              </p>
+            </div>
+
+            <!-- Avantages VIP -->
+            <div class="nl-perks">
+              <div class="nl-perk">
+                <span class="nl-perk-icon">◈</span>
+                <strong>Avant-première</strong>
+                <p>Accès aux collections 48h avant tout le monde</p>
+              </div>
+              <div class="nl-perk">
+                <span class="nl-perk-icon">◈</span>
+                <strong>Offres exclusives</strong>
+                <p>Remises réservées aux membres du Cercle</p>
+              </div>
+              <div class="nl-perk">
+                <span class="nl-perk-icon">◈</span>
+                <strong>Événements privés</strong>
+                <p>Invitations aux défilés et soirées LUXEORA</p>
+              </div>
+              <div class="nl-perk">
+                <span class="nl-perk-icon">◈</span>
+                <strong>Styliste dédié</strong>
+                <p>Un conseiller personnel à votre service</p>
+              </div>
+            </div>
+
+            <!-- Formulaire -->
+            <form class="nl-form" action="#" method="POST">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="fname">Prénom</label>
+                  <input type="text" id="fname" name="fname" placeholder="Votre prénom" required />
+                </div>
+                <div class="form-group">
+                  <label for="lname">Nom</label>
+                  <input type="text" id="lname" name="lname" placeholder="Votre nom" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">Adresse e-mail</label>
+                <input type="email" id="email" name="email" placeholder="votre@email.com" required />
+              </div>
+              <div class="form-group">
+                <label for="interest">Vos préférences</label>
+                <select id="interest" name="interest">
+                  <option value="">— Sélectionner</option>
+                  <option value="femme">Collection Femme</option>
+                  <option value="homme">Collection Homme</option>
+                  <option value="les-deux">Les Deux</option>
+                  <option value="evenements">Événements Exclusifs</option>
+                </select>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" id="consent" name="consent" required />
+                <label for="consent">
+                  J'accepte de recevoir les communications de LUXEORA Fashion House
+                  et confirme avoir lu la politique de confidentialité.
+                </label>
+              </div>
+              <button type="submit" class="btn-primary btn-full">
+                ♛ &nbsp;Rejoindre le Cercle LUXEORA
+              </button>
+            </form>
+
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ══════════════════════════
+         FOOTER
+    ══════════════════════════ -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+
+          <div class="footer-brand">
+            <img src="assets/logo/logo.jpeg" alt="LUXEORA" class="footer-logo-img" />
+            <p class="footer-tagline">
+              L'élégance n'est pas un luxe,<br />
+              <em>c'est un état d'esprit.</em>
+            </p>
+            <div class="footer-socials">
+              <a href="#" class="social-btn" aria-label="Instagram">IG</a>
+              <a href="#" class="social-btn" aria-label="Facebook">FB</a>
+              <a href="#" class="social-btn" aria-label="Pinterest">PT</a>
+              <a href="#" class="social-btn" aria-label="LinkedIn">LN</a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-col-title">Collections</h4>
+            <ul>
+              <li><a href="#">Femme SS25</a></li>
+              <li><a href="#">Homme SS25</a></li>
+              <li><a href="#">Accessoires</a></li>
+              <li><a href="#">Capsule Dorée</a></li>
+              <li><a href="#">Soldes</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-col-title">La Maison</h4>
+            <ul>
+              <li><a href="#">Notre Histoire</a></li>
+              <li><a href="#">Nos Valeurs</a></li>
+              <li><a href="#">Artisanat</a></li>
+              <li><a href="#">Durabilité</a></li>
+              <li><a href="#">Presse</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-col-title">Service</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Livraisons &amp; Retours</a></li>
+              <li><a href="#">Guide des Tailles</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Boutiques</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-col-title">Contact</h4>
+            <address>
+              <p>12, Avenue des Artisans<br />Cotonou, Bénin</p>
+              <p><a href="tel:+22901000000">+229 01 00 00 00</a></p>
+              <p><a href="mailto:contact@luxeora.bj">contact@luxeora.bj</a></p>
+              <p class="footer-hours">Lun–Sam : 9h–19h</p>
+            </address>
+          </div>
+
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2025 LUXEORA Fashion House. Tous droits réservés.</p>
+          <div class="footer-legal">
+            <a href="#">Mentions Légales</a>
+            <a href="#">Confidentialité</a>
+            <a href="#">CGV</a>
+          </div>
+          <p class="footer-craft"><em>Conçu avec rigueur · Fait avec âme</em></p>
+        </div>
+      </div>
+    </footer>
+
+  </div><!-- /page-wrap -->
+</body>
+</html>
