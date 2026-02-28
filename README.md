@@ -1,10 +1,15 @@
 # LUXEORA Fashion House 🏛️
 
+<<<<<<< HEAD
 > *« L'avenir du luxe est digital. LUXEORA est prête. »*
+=======
+> **L'élégance intemporelle, désormais à portée de clic.**
+>>>>>>> d747eeb69d25e042764f6ce035713730f03b08fb
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
 ![Responsive](https://img.shields.io/badge/Responsive-Design-gold)
+<<<<<<< HEAD
 ![GitHub](https://img.shields.io/badge/Dépôt-GitHub-181717?style=flat&logo=github&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Livré%2028%20Fév%202026-brightgreen)
 
@@ -70,6 +75,35 @@ Section témoignages clients ancrant la preuve sociale et levant les freins à l
 
 ---
 
+=======
+![Status](https://img.shields.io/badge/Status-En%20production-brightgreen)
+
+---
+
+## 📌 Présentation du projet
+
+**LUXEORA Fashion House** est une page d'accueil professionnelle réalisée dans le cadre du **Bloc 1 – Développement Web** du Parcours L1 IFRI de l'Académie de Programmation.
+
+Ce projet simule la transformation digitale d'une boutique de mode haut de gamme spécialisée dans les collections homme et femme. Face à une baisse progressive de ses performances commerciales liée à une présence digitale insuffisante, LUXEORA a décidé de lancer sa première vitrine web professionnelle.
+
+---
+
+## 🧩 Problématique Business
+
+LUXEORA rencontrait les difficultés suivantes avant ce projet :
+
+- Absence totale de site web officiel
+- Dépendance excessive aux réseaux sociaux
+- Image de marque vieillissante et incohérente
+- Faible taux de conversion des visiteurs en clients
+- Aucune collecte de données clients
+- Trafic uniquement physique en boutique
+
+**Solution apportée :** Une page d'accueil moderne, élégante et optimisée, conçue pour renforcer la visibilité de la marque, améliorer son image et stimuler les ventes en ligne.
+
+---
+
+>>>>>>> d747eeb69d25e042764f6ce035713730f03b08fb
 ## 🗂️ Structure du projet
 
 ```
@@ -93,13 +127,20 @@ LUXEORA Fashion House/
 
 | # | Section | Description |
 |---|---------|-------------|
+<<<<<<< HEAD
 | 1 | **Header** | Logo, navigation desktop, burger mobile, bouton mode sombre/clair, ticker |
 | 2 | **Hero** | Image pleine page, titre impactant, statistiques clés, call-to-action |
 | 3 | **Bandeau** | Message fort défilant — *"L'élégance intemporelle, désormais à portée de clic"* |
+=======
+| 1 | **Header** | Logo, navigation desktop, burger mobile, bouton mode sombre/clair, ticker d'annonces |
+| 2 | **Hero** | Image pleine page, titre impactant, statistiques clés, call-to-action |
+| 3 | **Bandeau Message Fort** | Défilement animé — *"L'élégance intemporelle, désormais à portée de clic"* |
+>>>>>>> d747eeb69d25e042764f6ce035713730f03b08fb
 | 4 | **Produits Phares** | 4 pièces iconiques avec catégorie, nom et prix |
 | 5 | **Galerie** | Carrousel horizontal scroll-snap avec 6 visuels de saison |
 | 6 | **À propos** | Histoire de la marque, valeurs, images empilées, badge 14 ans |
 | 7 | **Promotions** | Soldes −40%, compte à rebours, Capsule Dorée, Cercle Prestige |
+<<<<<<< HEAD
 | 8 | **Témoignages** | 4 avis clients de hauteur uniforme |
 | 9 | **Newsletter VIP** | Club Privé LUXEORA avec 4 avantages membres |
 | 10 | **Footer** | Logo, mini newsletter, socials animés, liens, contact, bouton ↑ |
@@ -116,16 +157,41 @@ L'absence de dépendances externes (Bootstrap, Tailwind) garantit une performanc
 
 ### 🎨 Thème Clair / Sombre — CSS `:checked` Hack
 Aucun JavaScript. Le basculement est réalisé uniquement avec un `<input type="checkbox">` caché et le sélecteur `:checked` :
+=======
+| 8 | **Témoignages** | 4 avis clients de taille uniforme |
+| 9 | **Newsletter VIP** | Formulaire d'inscription au Cercle Privé LUXEORA |
+| 10 | **Footer** | Logo, liens utiles, réseaux sociaux, informations de contact |
+
+---
+
+## ⚙️ Techniques CSS avancées utilisées
+
+### 🎨 Thème Clair / Sombre — CSS `:checked` Hack
+Aucun JavaScript. Le basculement de thème est réalisé uniquement avec :
+- Un `<input type="checkbox" id="theme-toggle">` caché
+- Le sélecteur CSS `.theme-input:checked ~ .page-wrap` qui redéfinit toutes les variables
+>>>>>>> d747eeb69d25e042764f6ce035713730f03b08fb
 
 ```css
 .theme-input:checked ~ .page-wrap {
   --bg:   #0D0B09;
   --text: #F0EAE0;
   --gold: #C5A96A;
+<<<<<<< HEAD
+=======
+  /* ... */
+>>>>>>> d747eeb69d25e042764f6ce035713730f03b08fb
 }
 ```
 
 ### 🍔 Menu Burger Mobile — CSS `:checked` Hack
+<<<<<<< HEAD
+=======
+Pareil, zéro JavaScript :
+- Un `<input type="checkbox" id="menu-toggle">` caché
+- Le menu mobile s'ouvre avec `max-height: 500px` via `:checked`
+
+>>>>>>> d747eeb69d25e042764f6ce035713730f03b08fb
 ```css
 .menu-input:checked ~ .page-wrap .mobile-nav {
   max-height: 500px;
@@ -133,6 +199,7 @@ Aucun JavaScript. Le basculement est réalisé uniquement avec un `<input type="
 ```
 
 ### 📐 Typographie Fluide — `clamp()`
+<<<<<<< HEAD
 ```css
 .section-title { font-size: clamp(2.2rem, 5vw, 5rem); }
 .ht-bold       { font-size: clamp(3rem, 8vw, 8rem);   }
@@ -167,17 +234,68 @@ Aucun JavaScript. Le basculement est réalisé uniquement avec un `<input type="
 | **Fond principal** | Ivoire chaud `#FAF8F3` | Lumineux, chaleureux, non agressif |
 | **Couleur accent** | Or patiné `#9A7040` | Luxe sobre, non clinquant |
 | **Mode sombre** | Encre `#0D0B09` | Noir organique profond |
+=======
+Toute la typographie s'adapte élastiquement à tous les écrans sans media queries multiples :
+
+```css
+.section-title { font-size: clamp(2.2rem, 5vw, 5rem); }
+.ht-bold       { font-size: clamp(3rem, 8vw, 8rem);   }
+.hero-sub      { font-size: clamp(0.8rem, 1.8vw, 0.92rem); }
+```
+
+### 🎠 Galerie Carrousel — `scroll-snap-type`
+La galerie utilise le défilement horizontal avec accrochage CSS natif :
+
+```css
+.snap-track {
+  scroll-snap-type: x mandatory;
+  overflow-x: auto;
+}
+.snap-card {
+  scroll-snap-align: start;
+}
+```
+
+### 📦 Mise en page — Flexbox
+Toute la mise en page est réalisée avec **Flexbox** : header, grille produits, section about, promos, témoignages, footer.
+
+### 📱 Responsive Design
+Adaptation complète via media queries à trois niveaux :
+- **≤ 1100px** — Tablette large
+- **≤ 860px**  — Tablette (burger activé, colonnes empilées)
+- **≤ 560px**  — Mobile (tout en colonne unique)
+
+---
+
+## 🎨 Choix de design
+
+| Élément | Choix | Justification |
+|---------|-------|---------------|
+| **Direction artistique** | Maison de Mode Éditoriale Lumineuse | Évoque le luxe accessible, clair et élégant |
+| **Police d'affichage** | Cormorant Garamond | Haute couture, contrastes typographiques marqués |
+| **Police de corps** | Josefin Sans | Géométrique, moderne, lisible à toutes tailles |
+| **Couleur principale** | Ivoire chaud `#FAF8F3` | Fond lumineux, chaleureux, non agressif |
+| **Couleur accent** | Or patiné `#9A7040` | Luxe sobre, non clinquant |
+| **Couleur sombre** | Encre `#0D0B09` | Noir organique pour le mode sombre |
+>>>>>>> d747eeb69d25e042764f6ce035713730f03b08fb
 
 ---
 
 ## 🚀 Lancer le projet
 
+<<<<<<< HEAD
 ```bash
 git clone https://github.com/Euloge-szn/luxeora-homepage.git
 ```
 Puis ouvrir `index.html` dans un navigateur ou via **VS Code Live Server**.
 
 > ✅ Aucune installation requise — HTML & CSS purs, zéro dépendance.
+=======
+1. Cloner ou télécharger le dépôt
+2. Ouvrir le dossier `LUXEORA Fashion House/`
+3. Double-cliquer sur `index.html` ou utiliser **VS Code Live Server**
+4. ✅ Aucune installation requise — HTML & CSS purs
+>>>>>>> d747eeb69d25e042764f6ce035713730f03b08fb
 
 ---
 
@@ -187,11 +305,19 @@ Puis ouvrir `index.html` dans un navigateur ou via **VS Code Live Server**.
 - [x] CSS3 avec feuille de style externe
 - [x] Aucun JavaScript ni framework
 - [x] Flexbox pour toute la mise en page
+<<<<<<< HEAD
 - [x] Responsive design — mobile, tablette, desktop
 - [x] `clamp()` pour la typographie fluide
 - [x] `scroll-snap-type` pour la galerie
 - [x] Thème sombre/clair via `:checked` CSS pur
 - [x] Burger mobile via `:checked` CSS pur
+=======
+- [x] Responsive design (mobile, tablette, desktop)
+- [x] `clamp()` pour la typographie fluide
+- [x] `scroll-snap-type` pour la galerie
+- [x] Thème sombre/clair via `:checked` CSS
+- [x] Burger mobile via `:checked` CSS
+>>>>>>> d747eeb69d25e042764f6ce035713730f03b08fb
 - [x] Code indenté et organisé
 
 ---
@@ -207,6 +333,7 @@ Puis ouvrir `index.html` dans un navigateur ou via **VS Code Live Server**.
 | Qualité du rapport écrit | 15% |
 | Clarté et pertinence du Business Plan | 10% |
 
+<<<<<<< HEAD
 ---
 
 ## 👨‍💻 Équipe projet
@@ -226,3 +353,16 @@ Projet Académique · Bloc 1 Développement Web · Février 2026
 
 > *"L'élégance n'est pas un luxe, c'est un état d'esprit."*
 > — LUXEORA Fashion House
+=======
+---
+
+## 👨‍💻 Auteur
+
+**Parcours L1 IFRI — Académie de Programmation**  
+Projet Académique · Bloc 1 Développement Web · 2025
+
+---
+
+> *"L'élégance n'est pas un luxe, c'est un état d'esprit."*  
+> — LUXEORA Fashion House
+>>>>>>> d747eeb69d25e042764f6ce035713730f03b08fb
